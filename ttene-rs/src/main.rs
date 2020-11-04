@@ -31,6 +31,7 @@ async fn main() -> Result<()> {
         let result = io_handler.handle_request(json_str, context.clone()).await;
         if let Some(response) = result {
             stdout.write_all(response.as_bytes()).await?;
+            stdout.write_all(b"\n").await?;
             stdout.flush().await?;
         }
 
