@@ -6,4 +6,31 @@ edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies]
+[dependencies.async-std]
+version = "1.7"
+features = ["attributes", "unstable"]
+
+[dependencies.anyhow]
+version = "1.0"
+
+[dependencies.log]
+version = "0.4"
+
+[dependencies.pretty_env_logger]
+version = "0.4"
+
+[dependencies.serde]
+version = "1.0"
+features = ["derive"]
+
+[dependencies.serde_json]
+version = "1.0"
+
+[dependencies.jsonrpc-core]
+git = "https://github.com/paritytech/jsonrpc"
+
+[dependencies.rodio]
+version = "0.13"
+
+[dependencies.rand]
+version = "0.7"
